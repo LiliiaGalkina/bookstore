@@ -18,6 +18,12 @@ html {
 	color: #1C2A39;
 }
 
+@media (max-width: 1280px) {
+	.container {
+		max-width: 900px;
+	}
+}
+
 /*header*/
 .header {
 	position: fixed;
@@ -190,25 +196,29 @@ main {
 		}
 }
 .books {
-
+	position: relative;
 		// .books__items
 
 		&__items {
 			margin-left: 19.6rem;
+			margin-bottom: 9.6rem;
 			display: grid;
 			grid-template-columns: repeat(2, 1fr);
 			column-gap: 7.6rem;
 			row-gap: 9.6rem;
 		}
 
-		// .books__card
-
-		&__card {
-		}
-
 		// .books__category
 
 		&__category {
+			position: absolute;
+			left: 0;
+			top: -4.6rem;
+			z-index: -1;
+		}
+
+		&__button {
+			margin: 0 auto;
 		}
 }
 
@@ -220,11 +230,6 @@ main {
 
 		&__img {
 			margin-right: 3.6rem;
-		}
-
-		// .card-book__info
-
-		&__info {
 		}
 
 		// .card-book__autor
@@ -302,19 +307,42 @@ main {
 }
 
 .category {
-
-		// .category__list
-
-		&__list {
-		}
+	padding-top: 4.5rem;
+	width: 41.6rem;
+	height: 71rem;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background-color: #EFEEF6;
 
 		// .category__item
 
 		&__item {
+			font-size: 1.2rem;
+			font-weight: 500;
+			color: #5C6A79;
 
+			&:not(:last-child) {
+				margin-bottom: 2.3rem;
+			}
 			// .category__item_active
 
 			&_active {
+				position: relative;
+				font-size: 1.6rem;
+				font-weight: 700;
+				color: #1C2A39;
+
+				&::before {
+					content: "";
+					position: absolute;
+					left: -1.4rem;
+					top: 0.5rem;
+					width: 0.6rem;
+					height: 0.6rem;
+					border-radius: 50%;
+					background-color: #756AD3;
+				}
 			}
 		}
 }
