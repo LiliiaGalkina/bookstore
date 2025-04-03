@@ -5,8 +5,14 @@ html {
   color: #5C6A79;
 }
 
+.wrapper {
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+
 .container {
-  position: relative;
   margin: 0 auto;
   padding: 0 1.5rem;
   max-width: 1150px;
@@ -17,11 +23,6 @@ html {
   color: #1C2A39;
 }
 
-@media (max-width: 1280px) {
-  .container {
-    max-width: 900px;
-  }
-}
 /*header*/
 .header {
   position: fixed;
@@ -33,7 +34,6 @@ html {
   background-color: #FFFFFF;
 }
 .header__container {
-  width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -72,6 +72,9 @@ main {
 }
 
 /*slider*/
+.slider {
+  position: relative;
+}
 .slider__content {
   margin-bottom: 15.1rem;
 }
@@ -125,7 +128,7 @@ main {
 .slider__dopinfo_rose {
   position: absolute;
   bottom: 7rem;
-  right: -16rem;
+  right: 0;
   width: 13.7rem;
   height: 27.3rem;
   background-color: #FF8FE6;
