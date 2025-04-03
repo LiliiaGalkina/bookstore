@@ -71,6 +71,7 @@ main {
   margin-bottom: 15.1rem;
 }
 .slider__body {
+  position: relative;
   height: 70.2rem;
   margin-bottom: 1.7rem;
 }
@@ -93,10 +94,103 @@ main {
   height: 1.2rem;
   border-radius: 50%;
   background-color: #EFEEF6;
+  cursor: pointer;
 }
 .slider__dot:not(:last-child) {
   margin-right: 1.7rem;
 }
 .slider__dot_active {
   background-color: #9E98DC;
+}
+.slider__dopinfo {
+  padding: 0 2rem 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-start;
+}
+.slider__dopinfo_violet {
+  position: absolute;
+  top: 7.9rem;
+  right: -6.3rem;
+  width: 14.9rem;
+  height: 20.4rem;
+  background-color: #9E98DC;
+}
+.slider__dopinfo_rose {
+  position: absolute;
+  bottom: 7rem;
+  right: -16rem;
+  width: 13.7rem;
+  height: 27.3rem;
+  background-color: #FF8FE6;
+}
+.slider__dopinfo-text {
+  margin-bottom: 0.4rem;
+  font-size: 1.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.books__items {
+  margin-left: 19.6rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  -moz-column-gap: 7.6rem;
+       column-gap: 7.6rem;
+  row-gap: 9.6rem;
+}
+.card-book {
+  display: flex;
+  align-items: center;
+}
+.card-book__img {
+  margin-right: 3.6rem;
+}
+.card-book__autor {
+  margin-bottom: 0.4rem;
+}
+.card-book__title {
+  margin-bottom: 0.4rem;
+  font-size: 1.6rem;
+}
+.card-book__rating {
+  margin-bottom: 1.6rem;
+}
+.card-book__text {
+  margin-bottom: 1.6rem;
+  max-width: 17.6rem;
+}
+.card-book__price {
+  margin-bottom: 1.6rem;
+  font-size: 1.3rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.card-book__button {
+  width: 17.6rem;
+  height: 4.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border: 0.1rem solid #4C3DB2;
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #4C3DB2;
+  background-color: #FFFFFF;
+}
+
+.rating {
+  display: flex;
+  align-items: center;
+}
+.rating__stars {
+  margin-right: 0.6rem;
+  display: flex;
+  align-items: center;
+}
+.rating__star:not(:last-child) {
+  margin-right: 0.1rem;
 }

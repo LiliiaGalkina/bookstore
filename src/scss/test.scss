@@ -103,6 +103,7 @@ main {
 		// .slider__body
 
 		&__body {
+			position: relative;
 			height: 70.2rem;
 			margin-bottom: 1.7rem;
 		}
@@ -134,6 +135,7 @@ main {
 			height: 1.2rem;
 			border-radius: 50%;
 			background-color: #EFEEF6;
+			cursor: pointer;
 
 			&:not(:last-child) {
 				margin-right: 1.7rem;
@@ -149,26 +151,42 @@ main {
 		// .slider__dopinfo
 
 		&__dopinfo {
+			padding: 0 2rem 2rem;
+			display: flex;
+			flex-direction: column;
+			justify-content: flex-end;
+			align-items: flex-start;
 
 			// .slider__dopinfo_violet
 
 			&_violet {
+				position: absolute;
+				top: 7.9rem;
+				right: -6.3rem;
+				width: 14.9rem;
+				height: 20.4rem;
+				background-color: #9E98DC;
 			}
 
 			// .slider__dopinfo_rose
 
 			&_rose {
+				position: absolute;
+				bottom: 7rem;
+				right: calc(-13.7rem - 2.3rem) ;
+				width: 13.7rem;
+				height: 27.3rem;
+				background-color: #FF8FE6;
 			}
 		}
 
 		// .slider__dopinfo-text
 
 		&__dopinfo-text {
-		}
-
-		// .slider__dopinfo-img
-
-		&__dopinfo-img {
+			margin-bottom: 0.4rem;
+			font-size: 1.8rem;
+			font-weight: 700;
+			text-transform: uppercase;
 		}
 }
 .books {
@@ -176,6 +194,11 @@ main {
 		// .books__items
 
 		&__items {
+			margin-left: 19.6rem;
+			display: grid;
+			grid-template-columns: repeat(2, 1fr);
+			column-gap: 7.6rem;
+			row-gap: 9.6rem;
 		}
 
 		// .books__card
@@ -188,69 +211,96 @@ main {
 		&__category {
 		}
 }
-.card-books {
 
-		// .card-books__rating
+.card-book {
+	display: flex;
+	align-items: center;
 
-		&__rating {
-		}
-
-		// .card-books__text
-
-		&__text {
-		}
-}
-.cards-book {
-
-		// .cards-book__img
+		// .card-book__img
 
 		&__img {
+			margin-right: 3.6rem;
 		}
 
-		// .cards-book__info
+		// .card-book__info
 
 		&__info {
 		}
 
-		// .cards-book__autor
+		// .card-book__autor
 
 		&__autor {
+			margin-bottom: 0.4rem;
 		}
 
-		// .cards-book__title
+		// .card-book__title
 
 		&__title {
+			margin-bottom: 0.4rem;
+			font-size: 1.6rem;
 		}
 
-		// .cards-book__price
+		// .card-book__rating
+
+		&__rating {
+			margin-bottom: 1.6rem;
+		}
+
+		// .card-book__text
+
+		&__text {
+			margin-bottom: 1.6rem;
+			max-width: 17.6rem;
+		}
+
+		// .card-book__price
 
 		&__price {
+			margin-bottom: 1.6rem;
+			font-size: 1.3rem;
+			font-weight: 700;
+			text-transform: uppercase;
+		}
+
+		// .card-book__button
+
+		&__button {
+			width: 17.6rem;
+			height: 4.5rem;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			text-align: center;
+			border: 0.1rem solid #4C3DB2;
+			font-size: 0.8rem;
+			font-weight: 700;
+			text-transform: uppercase;
+			color: #4C3DB2;
+			background-color: #FFFFFF;
 		}
 }
+
 .rating {
+	display: flex;
+	align-items: center;
 
 		// .rating__stars
 
 		&__stars {
+			margin-right: 0.6rem;
+			display: flex;
+			align-items: center;
 		}
 
 		// .rating__star
 
 		&__star {
-		}
-
-		// .rating__text
-
-		&__text {
+			&:not(:last-child) {
+				margin-right: 0.1rem;
+			}
 		}
 }
-.card-book {
 
-		// .card-book__button
-
-		&__button {
-		}
-}
 .category {
 
 		// .category__list
