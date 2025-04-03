@@ -1,6 +1,198 @@
+/*!**************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/scss/reset.scss ***!
+  \**************************************************************************************************************/
+@charset "UTF-8";
+/*Обнуление*/
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*,
+*:before,
+*:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:focus,
+:active {
+  outline: none;
+}
+
+a {
+  -webkit-tap-highlight-color: transparent;
+}
+
+a:focus,
+a:active {
+  outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+  display: block;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  line-height: 1;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input,
+button,
+textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a,
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: 400;
+}
+
+/*--------------------*/
 /*!*************************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/scss/test.scss ***!
   \*************************************************************************************************************/
-body {
-  background-color: green;
+html {
+  font-family: "Open Sans", sans-serif;
+  font-size: 10px;
+  line-height: 100%;
+  color: #5C6A79;
+}
+
+.container {
+  position: relative;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+  max-width: 1150px;
+}
+
+.title-font {
+  font-family: "Montserrat", sans-serif;
+  color: #1C2A39;
+}
+
+/*header*/
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 5;
+  padding: 4.7rem 0 4rem;
+  background-color: #FFFFFF;
+}
+.header__container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header__logo {
+  font-size: 2.4rem;
+  font-weight: 700;
+}
+.header__menu-list {
+  display: flex;
+  align-items: center;
+}
+.header__menu-item:not(:last-child) {
+  margin-right: 4rem;
+}
+.header__menu-link {
+  font-weight: 700;
+  color: #5C6A79;
+  text-transform: uppercase;
+}
+.header__menu-link_active {
+  font-weight: 900;
+  color: #1C2A39;
+}
+.header__icons {
+  display: flex;
+  align-items: center;
+}
+.header__icons-item:not(:last-child) {
+  margin-right: 4rem;
+}
+
+/*main*/
+main {
+  padding: 11.6rem 0 7.4rem;
+}
+
+/*slider*/
+.slider__content {
+  margin-bottom: 15.1rem;
+}
+.slider__body {
+  height: 70.2rem;
+  margin-bottom: 1.7rem;
+}
+.slider__item {
+  width: 100%;
+}
+.slider__item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.slider__dots {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.slider__dot {
+  width: 1.2rem;
+  height: 1.2rem;
+  border-radius: 50%;
+  background-color: #EFEEF6;
+}
+.slider__dot_active {
+  background-color: #9E98DC;
 }

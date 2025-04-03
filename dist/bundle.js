@@ -16,7 +16,7 @@
   \*************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _test__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./test */ \"./src/js/test.js\");\n/* harmony import */ var _scss_test_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../scss/test.scss */ \"./src/scss/test.scss\");\n\n\n(0,_test__WEBPACK_IMPORTED_MODULE_0__.hello)();\nconsole.log(\"hi\");\n\n//# sourceURL=webpack://bookstore/./src/js/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _test__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./test */ \"./src/js/test.js\");\n/* harmony import */ var _scss_reset_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../scss/reset.scss */ \"./src/scss/reset.scss\");\n/* harmony import */ var _scss_test_scss__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../scss/test.scss */ \"./src/scss/test.scss\");\n\n\n\n(0,_test__WEBPACK_IMPORTED_MODULE_0__.hello)();\nconsole.log(\"hi\");\n\n//# sourceURL=webpack://bookstore/./src/js/index.js?");
 
 /***/ }),
 
@@ -27,6 +27,16 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _tes
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   hello: () => (/* binding */ hello)\n/* harmony export */ });\nfunction hello() {\n  console.log(\"hello\");\n}\n\n//# sourceURL=webpack://bookstore/./src/js/test.js?");
+
+/***/ }),
+
+/***/ "./src/scss/reset.scss":
+/*!*****************************!*\
+  !*** ./src/scss/reset.scss ***!
+  \*****************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extract-plugin\n\n\n//# sourceURL=webpack://bookstore/./src/scss/reset.scss?");
 
 /***/ }),
 
