@@ -1,13 +1,21 @@
 const path = require("path");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
+const CssMinimiserPlugin = require("css-minimizer-webpack-plugin");
+const ESLintPlugin = require("eslint-webpack-plugin");
+const StylelintPlugin = require("stylelint-webpack-plugin");
+
 
 module.exports = {
   entry: path.resolve(__dirname, "src/js/index.js"),
   output: {
     path: path.resolve(__dirname, "dist"),
     filename: "bundle.js",
-	},
-  plugins: [new MiniCssExtractPlugin()],
+  },
+  plugins: [
+    new MiniCssExtractPlugin(),
+    new ESLintPlugin({ fix: true }),
+    new StylelintPlugin({ fix: true }),
+  ],
   module: {
     rules: [
       {
@@ -16,10 +24,13 @@ module.exports = {
         exclude: /node_modules/,
       },
       {
-        test: /\.css$/,
-        use: [MiniCssExtractPlugin.loader, "css-loader"],
+        test: /\.scss$/i,
+        use: [MiniCssExtractPlugin.loader, "css-loader", "sass-loader"],
       },
     ],
+  },
+  optimization: {
+    minimizer: [`...`, new CssMinimiserPlugin()],
   },
   mode: "development",
 };
