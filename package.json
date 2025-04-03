@@ -1,0 +1,23 @@
+{
+  "name": "bookstore",
+  "version": "1.0.0",
+  "description": "bookstore",
+  "homepage": "https://github.com/LiliiaGalkina/bookstore#readme",
+  "bugs": {
+    "url": "https://github.com/LiliiaGalkina/bookstore/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LiliiaGalkina/bookstore.git"
+  },
+  "license": "ISC",
+  "author": "Liliia Galkina",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack"
+  },
+  "devDependencies": {
+    "webpack": "^5.98.0",
+    "webpack-cli": "^6.0.1"
+  }
+}
