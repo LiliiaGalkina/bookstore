@@ -12,20 +12,23 @@
 <body>
 	<div class="wrapper">
 			<header class="header">
-				<div class="header__container container">
-					<a href="#" class="header__logo title-font">Bookshop</a>
-					<nav class="header__menu">
-						<ul class="header__menu-list">
-							<li class="header__menu-item"><a href="#" class="header__menu-link header__menu-link_active title-font">books</a></li>
-							<li class="header__menu-item"><a href="#" class="header__menu-link title-font">audiobooks</a></li>
-							<li class="header__menu-item"><a href="#" class="header__menu-link title-font">Stationery & gifts</a></li>
-							<li class="header__menu-item"><a href="#" class="header__menu-link title-font">blog</a></li>
-						</ul>
-					</nav>
-					<div class="header__icons">
-						<a href="#" class="header__icons-item"><img src="./src/img/icons/user.svg" alt="фигурка человечка"></a>
-						<a href="#" class="header__icons-item"><img src="./src/img/icons/search.svg" alt="лупа"></a>
-						<a href="#" class="header__icons-item"><img src="./src/img/icons/shopbag.svg" alt="сумка"></a>
+				<div class="container">
+					<div class="header__navigation">
+						<a href="#" class="header__logo title-font">Bookshop</a>
+						<nav class="header__menu">
+							<ul class="header__menu-list">
+								<li class="header__menu-item"><a href="#" class="header__menu-link header__menu-link_active title-font">books</a></li>
+								<li class="header__menu-item"><a href="#" class="header__menu-link title-font">audiobooks</a></li>
+								<li class="header__menu-item"><a href="#" class="header__menu-link title-font">Stationery & gifts</a></li>
+								<li class="header__menu-item"><a href="#" class="header__menu-link title-font">blog</a></li>
+							</ul>
+						</nav>
+						<div class="header__icons">
+							<a href="#" class="header__icons-item"><img src="./src/img/icons/user.svg" alt="фигурка человечка"></a>
+							<a href="#" class="header__icons-item"><img src="./src/img/icons/search.svg" alt="лупа"></a>
+							<a href="#" class="header__icons-item"><img src="./src/img/icons/shopbag.svg" alt="сумка"></a>
+						</div>
+
 					</div>
 				</div>
 			</header>
@@ -53,11 +56,29 @@
 						<a href="#" class="slider__dopinfo slider__dopinfo_rose">
 										<div class="slider__dopinfo-text title-font">top 100 books 2022</div>
 										<div class="slider__dopinfo-img"><img src="./src/img/arrow.png" alt="стрелочка вправо"></div>
-									</a>
+						</a>
 				</section>
 				<section class="books">
-						<div class="container">
-							<div class="books__items">
+					<div class="books__category category">
+						<div class="category__item title-font category__item_active">Architecture</div>
+						<div class="category__item title-font">Art & Fashion</div>
+						<div class="category__item title-font">Biography</div>
+						<div class="category__item title-font">Business</div>
+						<div class="category__item title-font">Hobbies</div>
+						<div class="category__item title-font">Drama</div>
+						<div class="category__item title-font">Fiction</div>
+						<div class="category__item title-font">Food & Drink</div>
+						<div class="category__item title-font">Health & Wellbeing</div>
+						<div class="category__item title-font">History & Politic</div>
+						<div class="category__item title-font">Humor</div>
+						<div class="category__item title-font">Poetry</div>
+						<div class="category__item title-font">Psychology</div>
+						<div class="category__item title-font">Science</div>
+						<div class="category__item title-font">Technology</div>
+						<div class="category__item title-font">Travel & Maps</div>
+					</div>
+					<div class="container">
+						<div class="books__items">
 								<div class="books__card card-book">
 									<div class="card-book__img"><img src="./src/img/book.png" alt="обложка книги"></div>
 									<div class="card-book__info">
@@ -178,30 +199,9 @@
 										<button class="card-book__button title-font">buy now</button>
 									</div>
 								</div>
-							</div>
-							<button class="books__button card-book__button">Load more</button>
 						</div>
-							<div class="books__category category">
-								<ul class="category__list title-font">
-									<li class="category__item category__item_active">Architecture</li>
-									<li class="category__item">Art & Fashion</li>
-									<li class="category__item">Biography</li>
-									<li class="category__item">Business</li>
-									<li class="category__item">Hobbies</li>
-									<li class="category__item">Drama</li>
-									<li class="category__item">Fiction</li>
-									<li class="category__item">Food & Drink</li>
-									<li class="category__item">Health & Wellbeing</li>
-									<li class="category__item">History & Politic</li>
-									<li class="category__item">Humor</li>
-									<li class="category__item">Poetry</li>
-									<li class="category__item">Psychology</li>
-									<li class="category__item">Science</li>
-									<li class="category__item">Technology</li>
-									<li class="category__item">Travel & Maps</li>
-								</ul>
-							</div>
-						
+						<button class="books__button card-book__button">Load more</button>
+					</div>		
 				</section>
 			</main>
 		
