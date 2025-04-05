@@ -1,0 +1,239 @@
+.books {
+  position: relative;
+}
+.books__items {
+  margin-left: 19.6rem;
+  margin-bottom: 9.6rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  -moz-column-gap: 7.6rem;
+       column-gap: 7.6rem;
+  row-gap: 9.6rem;
+}
+.books__category {
+  position: absolute;
+  left: 0;
+  top: -4.6rem;
+  z-index: -1;
+}
+.books__button {
+  margin: 0 auto;
+}
+
+.card-book {
+  display: flex;
+  align-items: center;
+}
+.card-book__img {
+  margin-right: 3.6rem;
+  max-width: 21.2rem;
+}
+.card-book__img img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.card-book__autor {
+  margin-bottom: 0.4rem;
+}
+.card-book__title {
+  margin-bottom: 0.4rem;
+  font-size: 1.6rem;
+  font-weight: 700;
+}
+.card-book__rating {
+  margin-bottom: 1.6rem;
+}
+.card-book__text {
+  margin-bottom: 1.6rem;
+  max-width: 17.6rem;
+}
+.card-book__price {
+  margin-bottom: 1.6rem;
+  font-size: 1.3rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.card-book__button {
+  width: 17.6rem;
+  height: 4.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border: 0.1rem solid #4C3DB2;
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #4C3DB2;
+  background-color: #FFFFFF;
+}
+
+.rating {
+  display: flex;
+  align-items: center;
+}
+.rating__stars {
+  margin-right: 0.6rem;
+  display: flex;
+  align-items: center;
+}
+.rating__star:not(:last-child) {
+  margin-right: 0.1rem;
+}
+
+.category {
+  padding-top: 4.5rem;
+  width: 41.6rem;
+  height: 71rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #EFEEF6;
+}
+.category__item {
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: #5C6A79;
+  cursor: pointer;
+}
+.category__item:not(:last-child) {
+  margin-bottom: 2.3rem;
+}
+.category__item_active {
+  position: relative;
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #1C2A39;
+}
+.category__item_active::before {
+  content: "";
+  position: absolute;
+  left: -1.4rem;
+  top: 0.5rem;
+  width: 0.6rem;
+  height: 0.6rem;
+  border-radius: 50%;
+  background-color: #756AD3;
+}
+
+@media (max-width: 1280px) {
+  .books__items {
+    -moz-column-gap: 3rem;
+         column-gap: 3rem;
+  }
+  .card-book__img {
+    margin-right: 2rem;
+  }
+  .category {
+    width: 20rem;
+  }
+}
+@media (max-width: 1024px) {
+  .books__items {
+    margin-left: 15rem;
+    margin-bottom: 5rem;
+    -moz-column-gap: 2rem;
+         column-gap: 2rem;
+    row-gap: 5rem;
+  }
+  .card-book__img {
+    margin-right: 1rem;
+  }
+  .card-book__rating {
+    margin-bottom: 1rem;
+  }
+  .card-book__button {
+    width: 10rem;
+    height: 3rem;
+  }
+  .card-book__title {
+    font-size: 1.4rem;
+  }
+  .category {
+    width: 16rem;
+    height: 81rem;
+  }
+  .category__item:not(:last-child) {
+    margin-bottom: 3rem;
+  }
+  .books__button {
+    width: 17.6rem;
+    height: 4.5rem;
+  }
+}
+@media (max-width: 768px) {
+  .books__items {
+    margin-left: 21rem;
+    grid-template-columns: 100%;
+  }
+  .card-book__img {
+    width: 50%;
+    margin-right: 2rem;
+  }
+  .card-book__autor {
+    font-size: 1.2rem;
+  }
+  .card-book__title {
+    font-size: 1.6rem;
+  }
+  .card-book__text {
+    max-width: 20rem;
+    font-size: 1.2rem;
+  }
+  .category {
+    width: 20rem;
+  }
+}
+@media (max-width: 570px) {
+  .books__items {
+    margin-left: 14rem;
+  }
+  .category {
+    width: 16rem;
+  }
+}
+@media (max-width: 480px) {
+  .category {
+    margin-bottom: 2rem;
+    padding: 3rem;
+    position: static;
+    width: 100%;
+    height: 35rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30%, 1fr));
+    grid-auto-rows: 2rem;
+    gap: 2rem;
+  }
+  .category__item:not(:last-child) {
+    margin-bottom: 0;
+  }
+  .books {
+    position: static;
+  }
+  .books__items {
+    margin-left: 0;
+  }
+  /*
+  }*/
+}
+@media (max-width: 360px) {
+  .card-book__img {
+    margin-right: 1rem;
+  }
+  .card-book__autor {
+    font-size: 1rem;
+  }
+  .card-book__title {
+    font-size: 1.4rem;
+  }
+  .card-book__text {
+    margin-bottom: 1.2rem;
+    font-size: 1rem;
+  }
+  .card-book__price {
+    margin-bottom: 1.2rem;
+    font-size: 1.4rem;
+  }
+}
