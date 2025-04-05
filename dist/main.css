@@ -95,9 +95,9 @@ h6 {
 }
 
 /*--------------------*/
-/*!*************************************************************************************************************!*\
-  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/scss/test.scss ***!
-  \*************************************************************************************************************/
+/*!**********************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/scss/general-style.scss ***!
+  \**********************************************************************************************************************/
 html {
   font-family: "Open Sans", sans-serif;
   font-size: 10px;
@@ -125,6 +125,13 @@ html {
   color: #1C2A39;
 }
 
+/*main*/
+main {
+  padding: 11.6rem 0 7.4rem;
+}
+/*!***************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/scss/header.scss ***!
+  \***************************************************************************************************************/
 /*header*/
 .header {
   max-width: 1440px;
@@ -231,7 +238,7 @@ html {
     overflow: auto;
     top: 0;
     left: 0;
-    background-color: #4C3DB2;
+    background-color: #9E98DC;
     width: 100vw;
     height: 100vh;
   }
@@ -262,11 +269,9 @@ html {
     margin-bottom: 2rem;
   }
 }
-/*main*/
-main {
-  padding: 11.6rem 0 7.4rem;
-}
-
+/*!***************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/scss/slider.scss ***!
+  \***************************************************************************************************************/
 /*slider*/
 .slider {
   position: relative;
@@ -460,7 +465,9 @@ main {
     top: 25rem;
   }
 }
-/*---------------------------------------------*/
+/*!**************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/scss/books.scss ***!
+  \**************************************************************************************************************/
 .books {
   position: relative;
 }
@@ -557,6 +564,7 @@ main {
   font-size: 1.2rem;
   font-weight: 500;
   color: #5C6A79;
+  cursor: pointer;
 }
 .category__item:not(:last-child) {
   margin-bottom: 2.3rem;

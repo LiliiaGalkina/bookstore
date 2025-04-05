@@ -1,0 +1,31 @@
+html {
+  font-family: "Open Sans", sans-serif;
+  font-size: 10px;
+  line-height: 100%;
+  color: #5C6A79;
+}
+
+.wrapper {
+  margin: 0 auto;
+  max-width: 1440px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 0 1.5rem;
+  max-width: 1150px;
+}
+
+.title-font {
+  font-family: "Montserrat", sans-serif;
+  color: #1C2A39;
+}
+
+/*main*/
+main {
+  padding: 11.6rem 0 7.4rem;
+}

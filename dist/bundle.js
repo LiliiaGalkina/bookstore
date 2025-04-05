@@ -26,7 +26,37 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
   \*************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _scss_reset_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../scss/reset.scss */ \"./src/scss/reset.scss\");\n/* harmony import */ var _scss_test_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../scss/test.scss */ \"./src/scss/test.scss\");\n/* harmony import */ var _header__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./header */ \"./src/js/header.js\");\n\n\n\n_header__WEBPACK_IMPORTED_MODULE_2__.burger.addEventListener(\"click\", _header__WEBPACK_IMPORTED_MODULE_2__.mobileMenu);\n\n//# sourceURL=webpack://bookstore/./src/js/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _scss_reset_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../scss/reset.scss */ \"./src/scss/reset.scss\");\n/* harmony import */ var _scss_general_style_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../scss/general-style.scss */ \"./src/scss/general-style.scss\");\n/* harmony import */ var _scss_header_scss__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../scss/header.scss */ \"./src/scss/header.scss\");\n/* harmony import */ var _scss_slider_scss__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../scss/slider.scss */ \"./src/scss/slider.scss\");\n/* harmony import */ var _scss_books_scss__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../scss/books.scss */ \"./src/scss/books.scss\");\n/* harmony import */ var _header__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./header */ \"./src/js/header.js\");\n//Стили\n\n\n\n\n\n\n//JS\n//header\n\n_header__WEBPACK_IMPORTED_MODULE_5__.burger.addEventListener(\"click\", _header__WEBPACK_IMPORTED_MODULE_5__.mobileMenu);\n\n//# sourceURL=webpack://bookstore/./src/js/index.js?");
+
+/***/ }),
+
+/***/ "./src/scss/books.scss":
+/*!*****************************!*\
+  !*** ./src/scss/books.scss ***!
+  \*****************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extract-plugin\n\n\n//# sourceURL=webpack://bookstore/./src/scss/books.scss?");
+
+/***/ }),
+
+/***/ "./src/scss/general-style.scss":
+/*!*************************************!*\
+  !*** ./src/scss/general-style.scss ***!
+  \*************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extract-plugin\n\n\n//# sourceURL=webpack://bookstore/./src/scss/general-style.scss?");
+
+/***/ }),
+
+/***/ "./src/scss/header.scss":
+/*!******************************!*\
+  !*** ./src/scss/header.scss ***!
+  \******************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extract-plugin\n\n\n//# sourceURL=webpack://bookstore/./src/scss/header.scss?");
 
 /***/ }),
 
@@ -40,13 +70,13 @@ eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extr
 
 /***/ }),
 
-/***/ "./src/scss/test.scss":
-/*!****************************!*\
-  !*** ./src/scss/test.scss ***!
-  \****************************/
+/***/ "./src/scss/slider.scss":
+/*!******************************!*\
+  !*** ./src/scss/slider.scss ***!
+  \******************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extract-plugin\n\n\n//# sourceURL=webpack://bookstore/./src/scss/test.scss?");
+eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extract-plugin\n\n\n//# sourceURL=webpack://bookstore/./src/scss/slider.scss?");
 
 /***/ })
 
