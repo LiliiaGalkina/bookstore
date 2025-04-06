@@ -2,6 +2,7 @@
   position: relative;
 }
 .books__items {
+  position: relative;
   margin-left: 19.6rem;
   margin-bottom: 9.6rem;
   display: grid;
@@ -9,12 +10,12 @@
   -moz-column-gap: 7.6rem;
        column-gap: 7.6rem;
   row-gap: 9.6rem;
+  z-index: 2;
 }
 .books__category {
   position: absolute;
   left: 0;
   top: -4.6rem;
-  z-index: -1;
 }
 .books__button {
   margin: 0 auto;
@@ -97,6 +98,10 @@
   font-weight: 500;
   color: #5C6A79;
   cursor: pointer;
+  transition: all 0.5s ease;
+}
+.category__item:hover {
+  text-decoration: underline;
 }
 .category__item:not(:last-child) {
   margin-bottom: 2.3rem;

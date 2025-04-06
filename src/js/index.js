@@ -10,10 +10,14 @@ import "../scss/books.scss";
 import {burger,  mobileMenu } from "./header";
 burger.addEventListener("click", mobileMenu);
 
-
 //slider
 import { initSlider } from "./slider.js";
 
+//category
+import { initCategory } from "./category.js";
+
+
 document.addEventListener("DOMContentLoaded", function () {
-  initSlider();
-})
+	initSlider();
+	initCategory();
+});

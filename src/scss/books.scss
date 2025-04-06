@@ -3,12 +3,14 @@
 		// .books__items
 
 		&__items {
+			position: relative;
 			margin-left: 19.6rem;
 			margin-bottom: 9.6rem;
 			display: grid;
 			grid-template-columns: repeat(2, 1fr);
 			column-gap: 7.6rem;
 			row-gap: 9.6rem;
+			z-index: 2;
 		}
 
 		// .books__category
@@ -17,7 +19,7 @@
 			position: absolute;
 			left: 0;
 			top: -4.6rem;
-			z-index: -1;
+			
 		}
 
 		&__button {
@@ -132,10 +134,16 @@
 			font-weight: 500;
 			color: #5C6A79;
 			cursor: pointer;
+			transition: all 0.5s ease;
+
+			&:hover {
+				text-decoration: underline;
+			}
 
 			&:not(:last-child) {
 				margin-bottom: 2.3rem;
 			}
+			
 			// .category__item_active
 
 			&_active {
