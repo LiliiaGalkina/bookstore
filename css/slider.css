@@ -14,6 +14,7 @@
   width: 100%;
   height: 100%;
   overflow: hidden;
+  opacity: 0;
 }
 .slider__item img {
   width: 100%;
@@ -22,6 +23,9 @@
      object-fit: cover;
   -o-object-position: bottom;
      object-position: bottom;
+}
+.slider__item_active {
+  opacity: 1;
 }
 .slider__dots {
   display: flex;
@@ -32,8 +36,8 @@
   width: 1.2rem;
   height: 1.2rem;
   border-radius: 50%;
-  background-color: #EFEEF6;
   cursor: pointer;
+  background-color: #EFEEF6;
 }
 .slider__dot:not(:last-child) {
   margin-right: 1.7rem;

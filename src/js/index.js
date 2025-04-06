@@ -9,3 +9,11 @@ import "../scss/books.scss";
 //header
 import {burger,  mobileMenu } from "./header";
 burger.addEventListener("click", mobileMenu);
+
+
+//slider
+import { initSlider } from "./slider.js";
+
+document.addEventListener("DOMContentLoaded", function () {
+  initSlider();
+})

@@ -11,6 +11,11 @@ module.exports = {
     path: path.resolve(__dirname, "dist"),
     filename: "bundle.js",
   },
+  devServer: {
+    static: {
+      directory: path.join(__dirname, "dist"),
+    },
+  },
   plugins: [
     new MiniCssExtractPlugin(),
     new ESLintPlugin({ fix: true }),
