@@ -1,8 +1,10 @@
 .books {
 	position: relative;
+	min-height: 75rem;
+
 		// .books__items
 
-		&__items {
+			&__items {
 			position: relative;
 			margin-left: 19.6rem;
 			margin-bottom: 9.6rem;
@@ -24,6 +26,15 @@
 
 		&__button {
 			margin: 0 auto;
+
+			&_hidden {
+				opacity: 0;
+			}
+
+			&_show {
+				opacity: 1;
+			}
+			
 		}
 }
 

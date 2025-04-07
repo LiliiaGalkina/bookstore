@@ -1,6 +1,7 @@
-
 function makeBookCard(arr) {
-	let bookCards = document.querySelector(".books__items");
+	const bookCards = document.querySelector(".books__items");
+	bookCards.innerHTML = "";
+	
   for (let elem of arr) {
     let card = document.createElement("div");
     card.classList.add("books__card", "card-book");
@@ -65,7 +66,10 @@ function makeBookCard(arr) {
     cardContent.appendChild(cardBookButton);
 
     bookCards.appendChild(card);
-  }
+	}
+	const buttonMore = document.querySelector(".books__button");
+	buttonMore.classList.remove("books__button_hidden");
+	buttonMore.classList.add("books__button_show");
 }
 
 async function getBooks(category) {
@@ -98,7 +102,8 @@ function initCategory() {
       }
       category.classList.add("category__item_active");
 		 currentCategory = category.dataset.name;
-      getBooks(currentCategory);
+		 getBooks(currentCategory);
+
     });
   }
 }

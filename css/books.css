@@ -1,5 +1,6 @@
 .books {
   position: relative;
+  min-height: 75rem;
 }
 .books__items {
   position: relative;
@@ -19,6 +20,12 @@
 }
 .books__button {
   margin: 0 auto;
+}
+.books__button_hidden {
+  opacity: 0;
+}
+.books__button_show {
+  opacity: 1;
 }
 
 .card-book {
