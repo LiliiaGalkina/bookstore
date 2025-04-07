@@ -497,15 +497,36 @@ main {
 .card-book {
   display: flex;
   align-items: center;
+  border: 0.1rem solid #bbc4ce;
+  box-shadow: 0px 0px 10px 0px #bbc4ce;
 }
 .card-book__img {
   margin-right: 3.6rem;
-  max-width: 21.2rem;
+  padding: 0.5rem;
+  min-width: 21.2rem;
+  height: 30rem;
+  border-right: 0.1rem solid #dbe2ea;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .card-book__img img {
   width: 100%;
+  max-height: 100%;
+}
+.card-book__content {
+  padding: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   height: 100%;
-  object-fit: cover;
+}
+.card-book__info {
+  flex: 1 1 auto;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 .card-book__autor {
   margin-bottom: 0.4rem;
@@ -521,6 +542,11 @@ main {
 .card-book__text {
   margin-bottom: 1.6rem;
   max-width: 17.6rem;
+  display: -webkit-box;
+  line-clamp: 3;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
 }
 .card-book__price {
   margin-bottom: 1.6rem;
@@ -529,6 +555,8 @@ main {
   text-transform: uppercase;
 }
 .card-book__button {
+  flex: 0 0 auto;
+  margin-top: auto;
   width: 17.6rem;
   height: 4.5rem;
   display: flex;
