@@ -1,6 +1,14 @@
+let countMin;
+let currentCategory;
+let buttonMore = document.querySelector(".books__button");
+const categories = document.querySelectorAll(".category__item");
+
 function makeBookCard(arr) {
 	const bookCards = document.querySelector(".books__items");
-	bookCards.innerHTML = "";
+    console.log(countMin);
+    if(countMin == 0){
+        bookCards.innerHTML = "";
+    }
 	
   for (let elem of arr) {
     let card = document.createElement("div");
@@ -8,7 +16,11 @@ function makeBookCard(arr) {
 
     let cardImage = document.createElement("div");
     cardImage.classList.add("card-book__img");
-    cardImage.innerHTML = `<img src="${elem.volumeInfo.imageLinks.thumbnail} alt="обложка книги">`;
+    if(elem.volumeInfo.imageLinks.thumbnail){
+        cardImage.innerHTML = `<img src="${elem.volumeInfo.imageLinks.thumbnail} alt="обложка книги">`;
+    } else {
+        cardImage.innerHTML = `<img src="${"../src/img/bookCards.jpg"} alt="обложка книги">`;
+    }
     card.appendChild(cardImage);
 
     let cardContent = document.createElement("div");
@@ -67,14 +79,14 @@ function makeBookCard(arr) {
 
     bookCards.appendChild(card);
 	}
-	const buttonMore = document.querySelector(".books__button");
+	buttonMore = document.querySelector(".books__button");
 	buttonMore.classList.remove("books__button_hidden");
 	buttonMore.classList.add("books__button_show");
 }
 
 async function getBooks(category) {
   const key = "AIzaSyB00TE1mq6z511Ag795Cn4uy4RwyZ_3Cq0";
-  const URL = `https://www.googleapis.com/books/v1/volumes?q="subject:${category}"&key=${key}&printType=books&startIndex=0&maxResults=6&langRestrict=en`;
+  const URL = `https://www.googleapis.com/books/v1/volumes?q="subject:${category}"&key=${key}&printType=books&startIndex=${countMin}&maxResults=6&langRestrict=en`;
 
   try {
     const res = await fetch(URL);
@@ -90,9 +102,10 @@ async function getBooks(category) {
 }
 
 function initCategory() {
-  const categories = document.querySelectorAll(".category__item");
-
-  let currentCategory = "";
+  
+  countMin = 0;
+  currentCategory = "";
+  console.log(countMin, currentCategory);
   for (let category of categories) {
     category.addEventListener("click", () => {
       for (let cat of categories) {
@@ -103,9 +116,21 @@ function initCategory() {
       category.classList.add("category__item_active");
 		 currentCategory = category.dataset.name;
 		 getBooks(currentCategory);
-
     });
   }
 }
+
+
+for(let category of categories){
+    category.addEventListener("click", initCategory);
+}
+
+function getBooksMore(){
+    countMin += 6;
+    getBooks(currentCategory);
+}
+
+
+buttonMore.addEventListener("click", getBooksMore)
 
 export { initCategory };
