@@ -1,7 +1,7 @@
 const slides = [
-   "img/banner1.png",
-   "img/banner2.png",
-   "img/banner3.png"
+   "src/img/banner1.png",
+   "src/img/banner2.png",
+   "srcimg/banner3.png"
 ];
 
 
