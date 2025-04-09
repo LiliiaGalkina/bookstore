@@ -42,11 +42,17 @@
 			font-weight: 700;
 			color: #5C6A79;
 			text-transform: uppercase;
+            transition: all 0.5s ease;
 
 			&_active {
 				font-weight: 900;
 				color: #1C2A39;
 			}
+
+            &:hover {
+                color: #4C3DB2;
+                text-decoration: underline;
+            }
 		}
 
 		// .header__icons
