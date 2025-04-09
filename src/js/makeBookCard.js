@@ -2,7 +2,7 @@ import { countMin } from "./category";
 
 function makeBookCard(arr) {
 	const bookCards = document.querySelector(".books__items");
-    console.log(countMin);
+ 
     if(countMin == 0){
         bookCards.innerHTML = "";
     }

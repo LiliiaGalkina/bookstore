@@ -28,7 +28,7 @@ function initCategory() {
   
   countMin = 0;
   currentCategory = "";
-  console.log(countMin, currentCategory);
+
   for (let category of categories) {
     category.addEventListener("click", () => {
       for (let cat of categories) {
@@ -56,4 +56,4 @@ function getBooksMore(){
 
 buttonMore.addEventListener("click", getBooksMore)
 
-export { countMin, initCategory };
+export { countMin, initCategory, getBooks };

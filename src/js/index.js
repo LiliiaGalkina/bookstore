@@ -16,8 +16,11 @@ import { initSlider } from "./slider.js";
 //category
 import { initCategory } from "./category.js";
 
+import { getBooks } from "./category.js";
 
 document.addEventListener("DOMContentLoaded", function () {
 	initSlider();
 	initCategory();
+    getBooks("Architecture");
 });
+
