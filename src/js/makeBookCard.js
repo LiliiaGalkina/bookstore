@@ -55,8 +55,8 @@ function makeBookCard(arr) {
       let cardBookRatingCount = document.createElement("div");
       cardBookRatingCount.classList.add("rating__text");
       cardBookRatingCount.innerHTML = elem.volumeInfo.ratingsCount + " review";
-      cardBookRating.append(cardBookRatingStars, cardBookRatingCount);
-    }
+		 cardBookRating.append(cardBookRatingStars, cardBookRatingCount);
+	}
 
     if (elem.volumeInfo.description) {
       let cardBookDescription = document.createElement("div");
