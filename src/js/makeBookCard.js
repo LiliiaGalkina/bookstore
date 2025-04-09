@@ -1,4 +1,7 @@
 import { countMin } from "./category";
+import { rating } from "./rating";
+
+
 
 function makeBookCard(arr) {
 	const bookCards = document.querySelector(".books__items");
@@ -47,7 +50,7 @@ function makeBookCard(arr) {
 
       let cardBookRatingStars = document.createElement("div");
       cardBookRatingStars.classList.add("rating__stars");
-      cardBookRatingStars.innerHTML = elem.volumeInfo.averageRating;
+      rating(elem.volumeInfo.averageRating, cardBookRatingStars);
 
       let cardBookRatingCount = document.createElement("div");
       cardBookRatingCount.classList.add("rating__text");
