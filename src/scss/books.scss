@@ -226,7 +226,14 @@
 	.card-book {
 		&__img {
 			margin-right: 2rem;
+            min-width: 20rem;
+            height: 28rem;
 		}
+
+        &__button {
+            width: 16rem;
+            height: 4rem;
+        }
 	}
 	.category {
 		width: 20rem;
@@ -246,6 +253,7 @@
 	.card-book {
 		&__img {
 			margin-right: 1rem;
+            min-width: 50%;
 		}
 
 		&__rating {
