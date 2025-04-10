@@ -1,6 +1,8 @@
 import { countMin } from "./category";
 import { rating } from "./rating";
 
+import { buttonBuysCount } from "./shoppingbagCount";
+
 
 
 function makeBookCard(arr) {
@@ -74,10 +76,17 @@ function makeBookCard(arr) {
 
     let cardBookButton = document.createElement("button");
     cardBookButton.classList.add("card-book__button", "title-font");
+    cardBookButton.dataset.buy = 0;
     cardBookButton.innerHTML = "buy now";
     cardContent.appendChild(cardBookButton);
 
     bookCards.appendChild(card);
+
+    let buttonBuys = document.querySelectorAll(".card-book__button");
+    for(let buttonBuy of buttonBuys){
+        buttonBuy.addEventListener("click", buttonBuysCount);
+    }
+
 	}
 }
 

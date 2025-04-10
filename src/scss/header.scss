@@ -71,6 +71,27 @@
 		}
 }
 
+.shoppingbag{
+    position: relative;
+}
+
+.shoppingbag-count {
+    display: none;
+    width: 1.3rem;
+    height: 1.3rem;
+    position: absolute;
+    bottom: -0.4rem;
+    right: -0.4rem;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background-color: #FF353A;
+    color: #FFFFFF;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+
 @media (max-width: 768px) {
 	.header {
 		&__icons {

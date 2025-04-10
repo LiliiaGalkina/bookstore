@@ -18,9 +18,12 @@ import { initCategory } from "./category.js";
 
 import { getBooks } from "./category.js";
 
+import { shoppingbagInit } from "./shoppingbagCount";
+
 document.addEventListener("DOMContentLoaded", function () {
 	initSlider();
 	initCategory();
+    shoppingbagInit();
     getBooks("Architecture");
 });
 
