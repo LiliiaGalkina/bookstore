@@ -16,6 +16,10 @@
 .header__logo {
   font-size: 2.4rem;
   font-weight: 700;
+  transition: all 0.5s ease;
+}
+.header__logo:hover {
+  text-shadow: 0 0 0.2rem #133b66;
 }
 .header__menu-list {
   display: flex;

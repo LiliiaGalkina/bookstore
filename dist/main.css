@@ -150,6 +150,10 @@ main {
 .header__logo {
   font-size: 2.4rem;
   font-weight: 700;
+  transition: all 0.5s ease;
+}
+.header__logo:hover {
+  text-shadow: 0 0 0.2rem #133b66;
 }
 .header__menu-list {
   display: flex;
@@ -356,6 +360,10 @@ main {
   width: 14.9rem;
   height: 20.4rem;
   background-color: #9E98DC;
+  transition: all 0.5s ease;
+}
+.slider__dopinfo_violet:hover {
+  background-color: #736bce;
 }
 .slider__dopinfo_rose {
   position: absolute;
@@ -364,6 +372,10 @@ main {
   width: 13.7rem;
   height: 27.3rem;
   background-color: #FF8FE6;
+  transition: all 0.5s ease;
+}
+.slider__dopinfo_rose:hover {
+  background-color: #e948c6;
 }
 .slider__dopinfo-text {
   margin-bottom: 0.4rem;
